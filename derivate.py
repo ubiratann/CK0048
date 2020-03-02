@@ -3,10 +3,10 @@ from backward import *
 from central import *
 
 
-def derivate(f,x,delta,filosofia):
+def derivate(f,x,delta,filosofia,ordem =1):
     if filosofia[0] == 'f':
-        return (f_forward(f,x,delta))
+        return (f_forward(f,x,delta,ordem))
     if filosofia[0] == 'b':
-        return (f_backward(f,x,delta))
+        return (f_backward(f,x,delta,ordem))
     if filosofia[0] == 'c':
-        return (f_central(f,x,delta))
+        return (f_central(f,x,delta,ordem))
