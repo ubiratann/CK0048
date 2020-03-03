@@ -1,6 +1,6 @@
-from forward import *
-from backward import *
-from central import *
+from forward import f_forward
+from backward import f_backward
+from central import f_central
 
 
 def derivate(f,x,delta,filosofia,ordem =1):
