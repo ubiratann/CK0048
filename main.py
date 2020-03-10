@@ -8,10 +8,14 @@ grau = int(input("Insira o grau do polinômio >> "))
 poli = gerarpolinomio(grau)
 f = gerarfuncao(poli) 
 x_par = int(input("Insira o valor de x >> "))
-print("Derivada primeira :::::: usando entrada")
-print("forward >> %.5f"%derivada(f,x_par,0.1,'f'))
-print("backward >> %.5f"%derivada(f,x_par,0.1,'b'))
-print("cenral >> %.5f"%derivada(f,x_par,0.1,'c'))
+
+z = 1 
+while(z <3):
+  print("Derivada de %d° ordem :::::: usando entrada"%z)
+  print("forward >> %.5f"%derivada(f,x_par,0.1,'f',z))
+  print("backward >> %.5f"%derivada(f,x_par,0.1,'b',z))
+  print("cenral >> %.5f"%derivada(f,x_par,0.1,'c',z))
+  z +=1
 
 
 '''
