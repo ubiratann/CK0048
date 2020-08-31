@@ -1,0 +1,10 @@
+1593896864271	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAeZOMj"
+Gtk-Message: 18:07:44.520: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 18:07:49.523: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 18:07:49.832: Failed to load module "appmenu-gtk-module"
+
+(firefox:40092): GLib-GIO-WARNING **: 18:07:54.522: /etc/xdg/kde-mimeapps.list contains a [Added Associations] group, but it is not permitted here.  Only the non-desktop-specific mimeapps.list file may add or remove associations.
+Gtk-Message: 18:07:56.710: Failed to load module "appmenu-gtk-module"
+1593896877821	Marionette	INFO	Listening on port 46555
+1593896877905	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593896887436	Marionette	INFO	Stopped listening on port 46555
