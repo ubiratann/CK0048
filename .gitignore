@@ -1,7 +1,0 @@
-#### ignore all files from python compiler
-
-*.pyc
-
-### ignore all pycache
-
-__pycache__/
