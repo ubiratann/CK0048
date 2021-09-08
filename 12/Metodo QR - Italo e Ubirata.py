@@ -3,13 +3,12 @@ import math
 
 
 
-A = np.array([
-    [40, 8, 4, 2, 1],
-    [8, 30, 12, 6, 2],
-    [4, 12, 20, 1, 2],
-    [2, 6, 1, 25, 4],
-    [1, 2, 2, 4, 5]
-])
+A = np.array(
+       [[40,8,4,2,1], 
+       [8,30,12,6,2], 
+       [4,12,20,1,2],
+       [2,6,1,25,4], 
+       [1,2,2,4,5]])
 
 def householderColunaAnterior(colunaAnt, i, n):
     w = np.zeros(n)
@@ -117,17 +116,15 @@ def QR(matriz, n, erro=10**-6):
     
     return P,diagonal
 
-met_qr, qra= QR(A, 5, 0.000001)
-
 matrizHouseholder, h = householder(A, A.shape[0])
-
+np.set_printoptions(precision=6)
 print('H = ')
 print(h)
 print()
 print('A = ')
 print(matrizHouseholder)
 
-p, matrizQR= QR(A, 5)
+p, matrizQR= QR(matrizHouseholder, 5)
 
 print('P = ')
 print(p)
@@ -136,6 +133,6 @@ print('HP(Autovetores) = ')
 print(np.dot(h, p))
 print('')
 print('Autovalores = ')
-print(np.diag(matrizQR))
+print(np.transpose([matrizQR]))
 
 
